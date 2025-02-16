@@ -4,6 +4,7 @@ import Fixdepartures from "./Components/fixdepartures.js";
 import "./index.css";
 import Aboutus from "../src/Components/section-1.js";
 import BestSelling from "./Components/bestselling.js";
+import SimpleSlider from "./Components/slider.js";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Aboutus />
       <Fixdepartures />
       <BestSelling />
+      <SimpleSlider />
     </>
   );
 }
