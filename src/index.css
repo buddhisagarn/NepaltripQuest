@@ -1,0 +1,435 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Nav.tsx */
+.nav-container {
+  display: flex;
+  background: rgba(0, 0, 0, 0.63);
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 55;
+  position: absolute;
+  min-width: 100%;
+  height: 90px;
+}
+
+.nav-container img {
+  filter: brightness(0) invert(1);
+}
+
+.nav-element {
+  display: flex;
+  list-style: none;
+  width: 500px;
+  justify-content: space-around;
+  color: #ffffff;
+}
+
+.nav-element li {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.nav-element li:hover {
+  transition: 0.5s;
+  color: rgb(33, 182, 0) !important;
+}
+
+.nav-last {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.nav-last a:hover {
+  transition: 0.5s;
+  color: rgb(33, 182, 0) !important;
+}
+
+.fa-bars {
+  color: white;
+  font-size: 34px;
+  display: none;
+}
+
+/* App.tsx */
+.fa-whatsapp {
+  position: fixed;
+  font-size: 55px;
+  right: 40px;
+  top: 85vh;
+  z-index: 88888888;
+  color: rgb(23, 189, 23);
+  border-radius: 50%;
+}
+
+.fa-whatsapp:hover {
+  cursor: pointer;
+  color: rgb(78, 255, 65);
+  transition: 1.5s;
+}
+
+.background-image {
+  background-image: url(../public/background.jpg);
+  height: 100vh;
+  min-width: 100%;
+  background-size: cover;
+  position: relative;
+
+}
+
+.balck {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.356);
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 44;
+}
+
+.balck p {
+  color: white;
+  position: relative;
+  top: 50vh;
+  width: 90%;
+  margin: auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  font-size: calc(3px + 2vw);
+  text-shadow: 1px 1px black;
+  z-index: 66666;
+}
+
+.second-paragraph {
+  color: rgb(57, 255, 57) !important;
+  font-size: calc(29px + 2vw) !important;
+  font-weight: 600;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  margin-top: 20px !important;
+}
+
+.fa-arrow-left,
+.fa-arrow-right {
+  position: absolute;
+  top: 70vh;
+  color: rgb(39, 32, 247);
+  background-color: rgb(255, 255, 255);
+  padding: 10px 11px;
+  border-radius: 50%;
+  border: none;
+  z-index: 66666;
+}
+
+.fa-arrow-right {
+  right: 10px;
+}
+
+.fa-arrow-left {
+  left: 10px;
+}
+
+.fa-arrow-left:hover,
+.fa-arrow-right:hover {
+  color: white;
+  cursor: pointer;
+  background-color: rgb(49, 49, 214);
+  transition: 0.5s;
+}
+
+.banner {
+  background-image: url(https://www.alchemytravels.com.np/siteassets/img/slider/s3.png);
+  height: 150px;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Header.tsx */
+header a {
+  color: rgb(201, 209, 42);
+  text-decoration: none;
+}
+
+.header-item {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  z-index: 555;
+  width: 90%;
+  margin: auto
+}
+
+.a {
+  display: flex;
+  gap: 5px;
+  justify-content: space-evenly;
+  width: 200px;
+  height: 50px;
+  align-items: center;
+  z-index: 55;
+}
+
+.b {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+
+.fa-envelope {
+  margin-right: 10px;
+}
+
+.email {
+  color: white;
+  z-index: 55;
+}
+
+@media only screen and (max-width:850px) {
+  .header-item {
+    width: auto;
+    padding: 0 30px;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 70%;
+    padding: 0 30px;
+  }
+
+  .nav-last {
+    gap: 15px;
+  }
+
+  .nav-element {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width:700px) {
+
+  .header-item {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 10px;
+    justify-content: center;
+  }
+
+  .a {
+    margin-top: 10px;
+    height: fit-content;
+    justify-content: start;
+    gap: 10px;
+  }
+
+  .nav-last {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+  }
+
+  .first-paragraph {
+    font-size: 20px !important;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  .b {
+    display: grid;
+    height: 50px;
+    row-gap: 0;
+    gap: 10px;
+  }
+
+  .nav-container {
+    gap: 10%;
+  }
+
+  /* .background-image {
+    width: 100%;
+  } */
+
+}
+
+/* Components Hello Section -1 */
+.section-2 {
+  height: fit-content;
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.himalimg {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.himalimage {
+  width: 500px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 15px rgb(0, 0, 0);
+}
+
+.himalimgae img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.abouthimal {
+  width: 500px;
+  text-align: justify;
+}
+
+.abouthimal P {
+  color: rgb(101, 101, 101);
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  word-spacing: 5px;
+  line-height: 25px;
+}
+
+@media only screen and (max-width:1100px) {
+  .section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+@media only screen and (max-width:570px) {
+  .himalimage {
+    width: 90%;
+  }
+
+  .abouthimal {
+    width: 90%;
+  }
+}
+
+.learn-more-button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: rgb(6, 93, 6);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.learn-more-button:hover {
+  background-color: rgb(9, 200, 9);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.youtube {
+  color: red;
+  font-size: 4rem;
+  position: absolute;
+  right: 40%;
+  top: 40%;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* Section -2 Departures fixed */
+.first-departure {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 50px;
+  padding: 50px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.image-5 {
+  height: 300px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+}
+
+
+.image-5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.image-5 img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.image-1 {
+  width: 600px;
+}
+
+.sec-dep {
+  display: flex;
+  justify-content: start;
+  gap: 10%;
+}
+
+.departure-head {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.departure-head h1 {
+  font-size: 4rem;
+}
+
+.departure-head p {
+  margin-top: 10px;
+}
+
+.div-detail {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: rgb(255, 255, 255);
+  padding: 10px 0;
+  text-align: center;
+  text-shadow: 1px 1px 5px black;
+  background-color: rgba(0, 0, 0, 0.272);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.div-detail h2 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.div-detail:hover {
+  cursor: pointer;
+}
+
+/* Best selling section */
+.bestselling {
+  text-align: center;
+
+}
+
+.bestselling h2 {
+  font-size: 4rem;
+}
