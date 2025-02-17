@@ -5,6 +5,9 @@ import "./index.css";
 import Aboutus from "../src/Components/section-1.js";
 import BestSelling from "./Components/bestselling.js";
 import SimpleSlider from "./Components/slider.js";
+import LearnMore from "./Components/buttons/learnmore.js";
+import Activity from "./Components/Our-activities/Activity.js";
+import Latest from "./Components/LatestPack.js";
 
 function App() {
   return (
@@ -28,6 +31,9 @@ function App() {
       <Fixdepartures />
       <BestSelling />
       <SimpleSlider />
+      <LearnMore />
+      <Activity />
+      <Latest />
     </>
   );
 }

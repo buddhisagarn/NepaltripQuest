@@ -1,0 +1,78 @@
+* {
+    margin: auto;
+}
+
+.cls-activity {
+    margin-top: 50px;
+    position: relative;
+    text-align: center;
+    font-size: 2rem;
+    background-image: url(https://nepaltripquest.com/assets/tenant/uploads/media-uploader/nepaltripquest-com/newsletter-bg1715507851.png);
+    background-size: cover;
+    background-position: 43% 66%;
+    background-repeat: no-repeat;
+    min-height: 400px;
+}
+
+.crowd {
+    font-size: 16px;
+    margin-top: 10px;
+    color: rgb(123, 125, 126);
+    font-weight: 600;
+
+}
+
+.himal-img {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
+}
+
+.hel {
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px grey;
+}
+
+.hel:hover {
+    transform: scale(1.05);
+    transition: 1.5s;
+}
+
+.hel p {
+    font-size: 16px;
+}
+
+@media only screen and (max-width:1250px) {
+    .himal-img {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .himal-img {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width:470px) {
+    .himal-img {
+        grid-template-columns: auto;
+
+    }
+
+    .hel {
+        width: 250px;
+    }
+}

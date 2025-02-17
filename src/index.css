@@ -95,7 +95,7 @@
 .balck p {
   color: white;
   position: relative;
-  top: 50vh;
+  top: 40vh;
   width: 90%;
   margin: auto;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -271,6 +271,14 @@ header a {
   justify-content: space-evenly;
   padding-top: 50px;
   padding-bottom: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+@media screen and (min-width:1300px) {
+  .section-2 {
+    justify-content: space-between;
+  }
 }
 
 .himalimg {
@@ -383,12 +391,19 @@ header a {
 
 .image-1 {
   width: 600px;
+  max-width: 90%;
 }
 
 .sec-dep {
+  width: 100%;
   display: flex;
   justify-content: start;
   gap: 10%;
+}
+
+.image-4,
+.image-5 {
+  margin: 0;
 }
 
 .departure-head {
@@ -397,7 +412,7 @@ header a {
 }
 
 .departure-head h1 {
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 
 .departure-head p {
@@ -424,6 +439,33 @@ header a {
   cursor: pointer;
 }
 
+@media only screen and (max-width:1200px) {
+  .first-departure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .sec-dep {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .image-5 {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  .image-5 {
+    width: 100%;
+  }
+}
+
 /* Best selling section */
 .bestselling {
   text-align: center;
@@ -431,22 +473,32 @@ header a {
 }
 
 .bestselling h2 {
-  font-size: 4rem;
+  font-size: 3rem;
+}
+
+.slider {
+  max-width: 1200px;
 }
 
 .card {
   width: 90% !important;
+  min-width: 300px;
   height: 400px;
   max-width: 600px;
   position: relative;
   border: solid 1px rgb(230, 230, 230);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
 
+@media only screen and (max-width:680px) {
+  .card {
+    width: 100% !important;
+  }
 }
 
 .card:hover {
-  box-shadow: 0px 0px 12px black;
+  box-shadow: 0px 0px 12px rgb(181, 181, 181);
   transform: scale(1.01);
   transition: 0.5s;
 }
@@ -484,4 +536,10 @@ header a {
   color: green;
   font-size: 24px;
   font-weight: 700;
+}
+
+/* Button Package */
+.btn-package {
+  display: flex;
+  justify-content: center;
 }

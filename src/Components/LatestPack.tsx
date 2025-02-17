@@ -2,8 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../index.css";
-
-export default function SimpleSlider() {
+function SimpleSlider() {
   const settings = {
     dots: true,
     infinite: true,
@@ -49,47 +48,47 @@ export default function SimpleSlider() {
         </div>
         <div className="card">
           <img
-            src="https://nepaltripquest.com/assets/tenant/uploads/media-uploader/nepaltripquest-com/langtang-valley-trek-41715596809.jpg"
+            src="https://nepaltripquest.com/assets/tenant/uploads/media-uploader/nepaltripquest-com/khopra-danda-trek1715581399.jpg"
             alt=""
           />
           <p className="days">2 Days</p>
 
-          <p className="days-2">Langtang valley Trek</p>
-          <p className="price-1">USD 153</p>
+          <p className="days-2">Khopra-danda Trek</p>
+          <p className="price-1">USD 232</p>
         </div>
         <div className="card">
           <img
-            src="https://nepaltripquest.com/assets/tenant/uploads/media-uploader/nepaltripquest-com/manaslu-base-camp-and-larke-la-pass-trek1718027134.jpg"
+            src="https://nepaltripquest.com/assets/tenant/uploads/media-uploader/nepaltripquest-com/everest-luxury-treks1718026047.jpg"
             alt=""
           />
           <p className="days">22 Days</p>
 
-          <p className="days-2">Manaslu Trek</p>
-          <p className="price-1">USD 2653</p>
+          <p className="days-2">Everest Trek</p>
+          <p className="price-1">USD 1853</p>
         </div>
         <div className="card">
           <img
-            src="https://nepaltripquest.com/assets/tenant/uploads/media-uploader/nepaltripquest-com/gosainkunda-naukunda-langtang-national-park1718641427.jpg"
+            src="https://nepaltripquest.com/assets/tenant/uploads/media-uploader/nepaltripquest-com/cho-la-pass-treks1718026742.jpg"
             alt=""
           />
           <p className="days">15 Days</p>
 
-          <p className="days-2">Gosaikunda Trek</p>
+          <p className="days-2">Cho-la-pass Trek</p>
           <p className="price-1">USD 2432</p>
         </div>
         <div className="card">
           <img
-            src="https://nepaltripquest.com/assets/tenant/uploads/media-uploader/nepaltripquest-com/chisopani-helambu1718531561.jpg"
+            src="https://nepaltripquest.com/assets/tenant/uploads/media-uploader/nepaltripquest-com/mardi-himal-trek-11715581860.jpg"
             alt=""
           />
           <p className="days">7 Days</p>
 
-          <p className="days-2">Chisopani Trek</p>
+          <p className="days-2">Mardi-himal Trek</p>
           <p className="price-1">USD 298</p>
         </div>
         <div className="card">
           <img
-            src="https://nepaltripquest.com/assets/tenant/uploads/media-uploader/nepaltripquest-com/everest-base-camp-trek-three-pass1718034488.jpg"
+            src="https://nepaltripquest.com/assets/tenant/uploads/media-uploader/nepaltripquest-com/1451718038922.jpg"
             alt=""
           />
           <p className="days">9 Days</p>
@@ -101,3 +100,23 @@ export default function SimpleSlider() {
     </div>
   );
 }
+
+function Latest() {
+  return (
+    <>
+      <div className="bestselling test" style={{ margin: "20px" }}>
+        <h2>
+          <span style={{ color: "green" }}>L</span>atest Packages
+        </h2>
+        <p style={{ margin: "20px", textTransform: "capitalize" }}>
+          welcome to Nepal Trip Quest Offers You Great Oppturnity to have unique
+          experience. Unique path trekking agendas will tell you why it's good
+          to book with us.
+        </p>
+      </div>
+      <SimpleSlider />
+    </>
+  );
+}
+
+export default Latest;
