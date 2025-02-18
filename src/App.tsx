@@ -8,6 +8,7 @@ import SimpleSlider from "./Components/slider.js";
 import LearnMore from "./Components/buttons/learnmore.js";
 import Activity from "./Components/Our-activities/Activity.js";
 import Latest from "./Components/LatestPack.js";
+import Feature from "./Components/features/Feature.js";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
       <LearnMore />
       <Activity />
       <Latest />
+      <Feature />
     </>
   );
 }

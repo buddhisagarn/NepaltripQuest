@@ -1,0 +1,90 @@
+.feature-dis {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 3rem;
+}
+
+.feature-child {
+    margin: 0;
+}
+
+.feature {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1200px;
+    height: fit-content;
+    margin: auto;
+    padding-bottom: 50px;
+
+}
+
+.feature-child {
+    height: 400px;
+    width: 300px;
+    max-height: 400px;
+    min-height: 200px;
+    position: relative;
+}
+
+.feature-child:hover {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.feature-child img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.feature-child p {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    display: none;
+    font-size: 2.5cap;
+    height: 20%;
+}
+
+
+
+.paragraph-2:hover {
+    color: green;
+    transition: 0.5s;
+}
+
+.feature-child:hover p {
+    display: block;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.455);
+    padding: 20px 0;
+    animation-name: paragraph-1;
+    animation-duration: 3s;
+}
+
+@keyframes paragraph-1 {
+    0% {
+        height: 10%;
+    }
+
+    20% {
+        height: 20%;
+    }
+}
+
+@media only screen and (max-width:1050px) {
+    .feature {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-child {
+        width: 90%;
+    }
+}
