@@ -1,7 +1,12 @@
 import "./testimonial.css";
 import Slider from "react-slick";
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
+interface ArrowProps {
+  className?: string;
+  style?: React.CSSProperties;
+  onClick?: () => void;
+}
+
+function SampleNextArrow({ className, style, onClick }: ArrowProps) {
   return (
     <div
       className={className}
@@ -10,9 +15,13 @@ function SampleNextArrow(props) {
     />
   );
 }
+interface ArrowProps {
+  className?: string;
+  style?: React.CSSProperties;
+  onClick?: () => void;
+}
 
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
+function SamplePrevArrow({ className, style, onClick }: ArrowProps) {
   return (
     <div
       className={className}
