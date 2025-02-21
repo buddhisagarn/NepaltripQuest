@@ -64,14 +64,37 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="secd-div"></div>
+      <div className="secd-div">
+        <div className="secd">
+          <h1>Sign up Newsletter</h1>
+          <br />
+          <p>And Get Update Of Our Latest News, Offer And Many More</p>
+        </div>
+        <div className="secd">
+          <form action="" id="form-2">
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your Email address"
+            />
+            <button>Sign Up Newsletter</button>
+          </form>
+        </div>
+      </div>
       <div className="last-div">
         <div className="last-child">
           <h2>Contact</h2>
           <br />
-          <a href="">9840953674</a>
-          <a href="">9840953674</a>
-          <a href="">9840953674</a>
+
+          <a href="">
+            <i className="fa-solid fa-phone omg"></i> 9840953674
+          </a>
+          <a href="">
+            <i className="fa-solid fa-envelope omg"></i> nepaltrip@gmail.com
+          </a>
+          <a href="">
+            <i className="fa-solid fa-location-dot omg"></i> Thamel, Kathmandu
+          </a>
         </div>
         <div className="last-child">
           <h2>Quick Links</h2>
@@ -88,12 +111,15 @@ export default function About() {
           <a href="">Manaslu Region</a>
           <a href="">Mustang Region</a>
         </div>
-        <div className="last-child">
-          <h2>Contact</h2>
-          <br />
-          <a href="">9840953674</a>
-          <a href="">9840953674</a>
-          <a href="">9840953674</a>
+        <div className="last-child la-child">
+          <img
+            src="https://nepaltripquest.com/assets/tenant/uploads/media-uploader/nepaltripquest-com/nepaltripquest1717496348.png"
+            alt=""
+            height="150px"
+            style={{ margin: "0" }}
+          />
+          <p>Welcome to Nepal trip</p>
+          <p>Explore, Experience and Enjoy Nepal.</p>
         </div>
       </div>
     </div>
