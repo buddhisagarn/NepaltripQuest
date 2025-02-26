@@ -2,7 +2,7 @@
     margin-top: 50px;
     background-image: url(../../../public/about.jpg);
     width: 100%;
-    height: 1000px;
+    height: fit-content;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -13,6 +13,7 @@
     width: 100%;
     text-align: center;
     font-size: 2rem;
+    padding-bottom: 30px;
 }
 
 .img-about {
@@ -36,9 +37,9 @@
 }
 
 .second-div-child {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    max-width: 1200px;
 }
 
 .chi {
@@ -83,12 +84,13 @@
 
 .secd-div {
     background: rgba(0, 0, 0, 0.397);
-    height: 30%;
+    height: 300px;
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 50px;
     align-items: center;
+    padding: 0px 20px;
 }
 
 .secd {
@@ -106,6 +108,7 @@
 
 #form-2 {
     position: relative;
+    width: fit-content;
 }
 
 input[type=email] {
@@ -145,13 +148,13 @@ input[type=email] {
     width: 100%;
     display: flex;
     min-height: fit-content;
-    align-items: end;
+    align-items: start;
     justify-content: center;
     gap: 50px;
     padding: 20px 0px;
 }
 
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:1050px) {
     .last-div {
         display: grid;
         grid-template-columns: auto auto;
@@ -159,14 +162,50 @@ input[type=email] {
     }
 
     .secd-div {
-        display: grid;
-        grid-template-columns: auto;
-        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .secd {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .secd p {
+        margin: auto;
     }
 
     .img-about {
         display: none;
     }
+}
+
+@media only screen and (max-width:650px) {
+    input[type=email] {
+        width: 100%;
+        height: 50px;
+    }
+
+    #form-2 {
+        width: 100%;
+    }
+
+    #form-2 button {
+        top: 8px;
+    }
+
+}
+
+@media only screen and (max-width:450px) {
+    #form-2 button {
+        top: -40px;
+        left: 0;
+        width: fit-content;
+
+    }
+
 }
 
 .last-child {
@@ -205,5 +244,25 @@ input[type=email] {
 @media only screen and (max-width:600px) {
     .last-div {
         grid-template-columns: auto;
+        row-gap: 10px;
+    }
+
+    .last-child {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:1150px) {
+    .second-div-child {
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 20px;
+    }
+
+    .chi {
+        margin: auto;
+        width: 90%;
+        height: 100%;
+        min-width: inherit;
     }
 }
