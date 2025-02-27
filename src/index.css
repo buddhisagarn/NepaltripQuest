@@ -3,6 +3,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --heading: 2rem;
+  --headingcolor: blue;
+}
+
 /* Nav.tsx */
 .nav-container {
   display: flex;
@@ -153,10 +158,10 @@
 }
 
 /* Header.tsx */
-header a {
+/* header a {
   color: rgb(201, 209, 42);
   text-decoration: none;
-}
+} */
 
 .header-item {
   display: flex;
@@ -304,6 +309,10 @@ header a {
   text-align: justify;
 }
 
+.abouthimal h1 {
+  font-size: var(--heading);
+}
+
 .abouthimal P {
   color: rgb(101, 101, 101);
   font-size: 15px;
@@ -412,7 +421,7 @@ header a {
 }
 
 .departure-head h1 {
-  font-size: 2.5rem;
+  font-size: var(--heading)
 }
 
 .departure-head p {
@@ -472,8 +481,8 @@ header a {
 
 }
 
-.bestselling h2 {
-  font-size: 3rem;
+.bestselling h1 {
+  font-size: var(--heading);
 }
 
 .slider {
