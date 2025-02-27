@@ -37,7 +37,7 @@ function SimpleSlider() {
       className="slider"
     >
       <Slider {...settings}>
-        <div className="card">
+        <div className="card1">
           <img
             src="https://nepaltripquest.com/assets/tenant/uploads/media-uploader/nepaltripquest-com/image-processing20181012-4-16qumtg1718041913.jpg"
             alt=""
@@ -46,7 +46,7 @@ function SimpleSlider() {
           <p className="days-2">Mustang Trek</p>
           <p className="price-1">USD 650</p>
         </div>
-        <div className="card">
+        <div className="card1">
           <img
             src="https://nepaltripquest.com/assets/tenant/uploads/media-uploader/nepaltripquest-com/khopra-danda-trek1715581399.jpg"
             alt=""
@@ -56,7 +56,7 @@ function SimpleSlider() {
           <p className="days-2">Khopra-danda Trek</p>
           <p className="price-1">USD 232</p>
         </div>
-        <div className="card">
+        <div className="card1">
           <img
             src="https://nepaltripquest.com/assets/tenant/uploads/media-uploader/nepaltripquest-com/everest-luxury-treks1718026047.jpg"
             alt=""
@@ -66,7 +66,7 @@ function SimpleSlider() {
           <p className="days-2">Everest Trek</p>
           <p className="price-1">USD 1853</p>
         </div>
-        <div className="card">
+        <div className="card1">
           <img
             src="https://nepaltripquest.com/assets/tenant/uploads/media-uploader/nepaltripquest-com/cho-la-pass-treks1718026742.jpg"
             alt=""
@@ -76,7 +76,7 @@ function SimpleSlider() {
           <p className="days-2">Cho-la-pass Trek</p>
           <p className="price-1">USD 2432</p>
         </div>
-        <div className="card">
+        <div className="card1">
           <img
             src="https://nepaltripquest.com/assets/tenant/uploads/media-uploader/nepaltripquest-com/mardi-himal-trek-11715581860.jpg"
             alt=""
@@ -86,7 +86,7 @@ function SimpleSlider() {
           <p className="days-2">Mardi-himal Trek</p>
           <p className="price-1">USD 298</p>
         </div>
-        <div className="card">
+        <div className="card1">
           <img
             src="https://nepaltripquest.com/assets/tenant/uploads/media-uploader/nepaltripquest-com/1451718038922.jpg"
             alt=""

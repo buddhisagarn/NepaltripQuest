@@ -12,6 +12,8 @@ import Feature from "./Components/features/Feature.js";
 import Testimonials from "./Components/CestTestimonials/Testimonials.js";
 import Example from "./Components/Accordain/Accordian.js";
 import About from "./Components/About/about.js";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 function App() {
   return (
     <>

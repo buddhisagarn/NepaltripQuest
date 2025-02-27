@@ -38,7 +38,7 @@ export default function SimpleSlider() {
       className="slider"
     >
       <Slider {...settings}>
-        <div className="card">
+        <div className="card1">
           <img
             src="https://nepaltripquest.com/assets/tenant/uploads/media-uploader/nepaltripquest-com/image-processing20181012-4-16qumtg1718041913.jpg"
             alt=""
@@ -47,7 +47,7 @@ export default function SimpleSlider() {
           <p className="days-2">Mustang Trek</p>
           <p className="price-1">USD 650</p>
         </div>
-        <div className="card">
+        <div className="card1">
           <img
             src="https://nepaltripquest.com/assets/tenant/uploads/media-uploader/nepaltripquest-com/langtang-valley-trek-41715596809.jpg"
             alt=""
@@ -57,7 +57,7 @@ export default function SimpleSlider() {
           <p className="days-2">Langtang valley Trek</p>
           <p className="price-1">USD 153</p>
         </div>
-        <div className="card">
+        <div className="card1">
           <img
             src="https://nepaltripquest.com/assets/tenant/uploads/media-uploader/nepaltripquest-com/manaslu-base-camp-and-larke-la-pass-trek1718027134.jpg"
             alt=""
@@ -67,7 +67,7 @@ export default function SimpleSlider() {
           <p className="days-2">Manaslu Trek</p>
           <p className="price-1">USD 2653</p>
         </div>
-        <div className="card">
+        <div className="card1">
           <img
             src="https://nepaltripquest.com/assets/tenant/uploads/media-uploader/nepaltripquest-com/gosainkunda-naukunda-langtang-national-park1718641427.jpg"
             alt=""
@@ -77,7 +77,7 @@ export default function SimpleSlider() {
           <p className="days-2">Gosaikunda Trek</p>
           <p className="price-1">USD 2432</p>
         </div>
-        <div className="card">
+        <div className="card1">
           <img
             src="https://nepaltripquest.com/assets/tenant/uploads/media-uploader/nepaltripquest-com/chisopani-helambu1718531561.jpg"
             alt=""
@@ -87,7 +87,7 @@ export default function SimpleSlider() {
           <p className="days-2">Chisopani Trek</p>
           <p className="price-1">USD 298</p>
         </div>
-        <div className="card">
+        <div className="card1">
           <img
             src="https://nepaltripquest.com/assets/tenant/uploads/media-uploader/nepaltripquest-com/everest-base-camp-trek-three-pass1718034488.jpg"
             alt=""
