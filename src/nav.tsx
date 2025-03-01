@@ -2,7 +2,14 @@ import "./index.css";
 import { Link } from "react-router-dom";
 import { Dropdown, DropdownButton } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-
+function Menu() {
+  return (
+    //index css line 65
+    <div className="menu-item">
+      <h1>Hello</h1>
+    </div>
+  );
+}
 const BasicButtonExample = () => {
   const navigate = useNavigate(); // React Router navigation
 
@@ -126,7 +133,7 @@ function NavBar() {
           </Link>
           <i className="fa-solid fa-magnifying-glass"></i>
         </div>
-        <div className="menu">
+        <div className="menu" onClick={Menu}>
           <i className="fa-solid fa-bars"></i>
         </div>
       </div>

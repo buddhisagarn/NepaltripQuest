@@ -6,11 +6,48 @@
     max-width: 90%;
 }
 
-.background-image-2 {
-    background-image: url(../../../public/everest.jpg);
+.background-image-5,
+.background-image-2,
+.background-image-6,
+.background-image-7,
+.background-image-9 {
     height: 80vh;
     min-width: 100%;
     background-size: cover;
     background-position: 100% 100%;
     position: relative;
+}
+
+/* seperated for better image looks for background-position */
+.background-image-8 {
+    height: 80vh;
+    min-width: 100%;
+    background-size: cover;
+    background-position: 10% 70%;
+    position: relative;
+}
+
+.background-image-2 {
+    background-image: url(../../../public/everest.jpg);
+
+}
+
+.background-image-5 {
+    background-image: url(../../../public/trekking.jpg);
+}
+
+.background-image-6 {
+    background-image: url(../../../public/tour.jpg);
+}
+
+.background-image-7 {
+    background-image: url(../../../public/junglesafari.jpg);
+}
+
+.background-image-8 {
+    background-image: url(../../../public/adventuresports.jpg);
+}
+
+.background-image-9 {
+    background-image: url(../../../public/sightseeing.jpg);
 }
