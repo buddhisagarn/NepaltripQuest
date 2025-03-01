@@ -2,7 +2,9 @@ import "./feature.css";
 export default function Feature() {
   return (
     <>
-      <h2 className="feature-dis">Featured Destinations</h2>
+      <h2 className="feature-dis" id="featured-destination">
+        Featured Destinations
+      </h2>
       <div className="feature">
         <div className="feature-child">
           <img

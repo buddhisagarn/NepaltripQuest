@@ -30,6 +30,7 @@
   width: 600px;
   justify-content: space-around;
   color: #ffffff;
+  margin: 0;
 }
 
 .nav-element li {
@@ -559,4 +560,34 @@
   border: none;
   font-size: inherit;
   padding: 0;
+}
+
+#drop-nav {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+/* Annapurna background image */
+.annapurna {
+  text-align: center;
+  width: 1200px;
+  max-width: 90;
+  border: solid 1px rgb(221, 216, 216);
+  margin: 50px auto;
+}
+
+.background-image-3 {
+  background-image: url("../public/annapurna.jpg");
+  position: relative;
+  height: 80vh;
+  background-position: 50% 20%;
+  background-size: cover;
+}
+
+.background-image-4 {
+  background-image: url("../public/manaslu.jpg");
+  position: relative;
+  height: 80vh;
+  background-position: 50% 20%;
+  background-size: cover;
 }

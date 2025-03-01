@@ -1,49 +1,40 @@
-import Header from "./Header.js";
-import NavBar from "./nav.js";
-import Fixdepartures from "./Components/fixdepartures.js";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
-import Aboutus from "../src/Components/section-1.js";
-import BestSelling from "./Components/bestselling.js";
-import SimpleSlider from "./Components/slider.js";
-import LearnMore from "./Components/buttons/learnmore.js";
-import Activity from "./Components/Our-activities/Activity.js";
-import Latest from "./Components/LatestPack.js";
-import Feature from "./Components/features/Feature.js";
-import Testimonials from "./Components/CestTestimonials/Testimonials.js";
-import Example from "./Components/Accordain/Accordian.js";
-import About from "./Components/About/about.js";
 import "bootstrap/dist/css/bootstrap.min.css";
+import HomePage from "./pages/Homepage";
+import DestinationPage from "./pages/Destination/Destination";
+import Annaupuran from "./pages/Annaupuranpage";
+import Manaslu from "./pages/Manaslu";
+import Trekkingpage from "./pages/Trekkingpage";
+import Tourpage from "./pages/Tourpage";
+import Junglepage from "./pages/Junglepage";
+import Adventure from "./pages/Adventure";
+import Sightseeing from "./pages/Sightseeing";
+import Aboutpage2 from "./pages/Aboutpage2";
+import Teampage from "./pages/Teampage";
+import Contact from "./pages/Contact";
+import Blogpage from "./pages/Blogpage";
 
 function App() {
   return (
-    <>
-      <i className="fab fa-whatsapp"></i>
-      <div className="background-image">
-        <Header />
-        <NavBar />
-        <div className="balck">
-          <p className="first-paragraph">
-            Your Ultimate Partner In Trekking Adventures Across The Majestic
-            Landscapes Of Nepal
-          </p>
-          <p className="second-paragraph">Wecome To Nepal Trip Quest</p>
-          <i className="fa-solid fa-arrow-left"></i>
-          <i className="fa-solid fa-arrow-right"></i>
-          <div className="banner"></div>
-        </div>
-      </div>
-      <Aboutus />
-      <Fixdepartures />
-      <BestSelling />
-      <SimpleSlider />
-      <LearnMore />
-      <Activity />
-      <Latest />
-      <Feature />
-      <Testimonials />
-      <Example />
-      <About />
-    </>
+    <BrowserRouter>
+      <Routes>
+        {/* pass the routes for linking pages in the react  */}
+        <Route path="/" element={<HomePage />} />
+        <Route path="/destination" element={<DestinationPage />} />
+        <Route path="/ann" element={<Annaupuran />} />
+        <Route path="/manaslu" element={<Manaslu />} />
+        <Route path="/trekpage" element={<Trekkingpage />} />
+        <Route path="/tour" element={<Tourpage />} />
+        <Route path="/jungle-safari" element={<Junglepage />} />
+        <Route path="adventure" element={<Adventure />} />
+        <Route path="sightseeing" element={<Sightseeing />} />
+        <Route path="blog" element={<Blogpage />} />
+        <Route path="about-nav" element={<Aboutpage2 />} />
+        <Route path="team" element={<Teampage />} />
+        <Route path="contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 export default App;
