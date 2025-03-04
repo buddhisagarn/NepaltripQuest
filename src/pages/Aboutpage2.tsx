@@ -7,7 +7,7 @@ export default function Aboutpage2() {
   return (
     <>
       <i className="fab fa-whatsapp"></i>
-      <div className="background-image-2">
+      <div className="background-image-4">
         <Header />
         <NavBar />
         <div className="balck">

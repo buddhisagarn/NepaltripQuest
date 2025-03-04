@@ -179,6 +179,14 @@
   width: 100%;
 }
 
+.contact {
+  position: absolute;
+  border: 1px solid white;
+  height: 80%;
+  width: 100%;
+  top: 0;
+}
+
 /* Header.tsx */
 /* header a {
   color: rgb(201, 209, 42);
